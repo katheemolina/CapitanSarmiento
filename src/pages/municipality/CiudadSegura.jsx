@@ -162,8 +162,7 @@ const CiudadSegura = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow cursor-pointer"
-                    onClick={handleFeatureClick}
+                    className="bg-white rounded-xl shadow-lg p-8 transition-shadow"
                   >
                     <div className={`inline-flex p-3 rounded-lg bg-gradient-to-r ${item.color} text-white mb-4`}>
                       {item.icon}
@@ -326,8 +325,7 @@ const CiudadSegura = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow cursor-pointer"
-                onClick={handleFeatureClick}
+                className="bg-white rounded-xl shadow-lg p-8"
               >
                 <div className={`inline-flex p-3 rounded-lg bg-gradient-to-r ${institution.color} text-white mb-4`}>
                   {institution.icon}
