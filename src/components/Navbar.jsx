@@ -60,6 +60,7 @@ const Navbar = () => {
                     className="relative"
                     onMouseEnter={() => setMunicipioOpen(true)}
                     onMouseLeave={() => setMunicipioOpen(false)}
+                    style={{ display: 'inline-block' }}
                   >
                     <Link
                       to={item.path}
@@ -79,7 +80,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 py-3 z-50 backdrop-blur-sm"
+                        className="absolute top-full left-0 -mt-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 py-3 z-50 backdrop-blur-sm pointer-events-auto"
                       >
                         {item.dropdownItems.map((dropdownItem, index) => (
                           <motion.div
