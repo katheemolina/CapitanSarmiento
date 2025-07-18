@@ -17,6 +17,7 @@ import CiudadViva from '@/pages/municipality/CiudadViva.jsx';
 import CiudadVerde from '@/pages/municipality/CiudadVerde.jsx';
 import CiudadOportunidades from '@/pages/municipality/CiudadOportunidades.jsx';
 import CiudadAmigable from '@/pages/municipality/CiudadAmigable.jsx';
+import TalleresCulturales from './pages/municipality/TalleresCulturales';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/municipio/ciudad-verde" element={<CiudadVerde />} />
         <Route path="/municipio/ciudad-oportunidades" element={<CiudadOportunidades />} />
         <Route path="/municipio/ciudad-amigable" element={<CiudadAmigable />} />
+        <Route path="/municipality/TalleresCulturales" element={<TalleresCulturales />} />
       </Routes>
       
       <Footer />
